@@ -1,0 +1,77 @@
+# fixxing bugs:
+https://github.com/luiscarlosgph/how-to
+
+# building docker images:
+https://github.com/luiscarlosgph/dockerx
+
+
+# install portainer:
+% $ docker volume create portainer_data
+
+% docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+
+# acces via Access https://127.0.0.1:9443
+
+
+
+# sequences of commands to build an interactive docker env:
+
+# check containers
+% docker ps
+
+
+
+# add user (remote server):
+% adduser mboels
+% apt update
+% apt install vim
+% vim /etc/passwd
+% vim /etc/group
+% apt install sudo
+
+
+# run docker (run locally):
+% docker exec -it -u mboels dev /bin/bash 
+OR
+% docker exec -it -u mboels <CONTAINER ID> /bin/bash
+
+
+# if not already created (run locally):
+% sudo apt install openssh-server
+
+# start ssh server (run locally):
+% sudo /etc/init./ssh start
+
+
+# access ssh server:
+% ssh mboels@172.17.0.3
+
+
+
+root@dev:/workspace# adduser mboels
+
+
+
+root@dev:/workspace# apt update
+
+root@dev:/workspace# apt install vim
+
+root@dev:/workspace# vim /etc/passwd
+root@dev:/workspace# vim /etc/group
+root@dev:/workspace# apt install sudo
+
+
+mboels@dev:/workspace$ sudo /etc/init.d/ssh start
+
+mboels@dev:/workspace$ exit
+
+% ssh mboels@172.17.0.3
+
+ssh-keygen -f "/home/mboels/.ssh/known_hosts" -R "172.17.0.3"
+
+
+% docker commit dev mboels/pytorch:version1
+
+% ssh mboels@172.17.0.3
+
+
