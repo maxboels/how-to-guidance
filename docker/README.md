@@ -5,7 +5,7 @@ Description
 - Access containers with ssh to work on remote servers (mount your local machine in your container).
 
 
-Install a nice Docker environment
+Install a Docker environment
 ---------------------------------
    
     
