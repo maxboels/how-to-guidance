@@ -5,8 +5,18 @@ Description
 - Access containers with ssh to work on remote servers (mount your local machine in your container).
 
 
-Install a Docker environment
----------------------------------
+
+
+Save a docker image from remote server and create new docker image locally:
+---------------------------------------------------------------------------
+	```
+	docker save -o max_image.tar nvcr.io/nvidia/pytorch:22.11-py3
+	```
+
+
+
+Create a docker environment and ssh it:
+---------------------------------------
    
     
 2. Install Docker:
