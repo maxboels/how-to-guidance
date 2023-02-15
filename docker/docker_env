@@ -5,6 +5,10 @@ https://github.com/luiscarlosgph/how-to
 https://github.com/luiscarlosgph/dockerx
 
 
+# docker templates
+https://github.com/luiscarlosgph/docker-templates
+
+
 # install portainer:
 % $ docker volume create portainer_data
 
@@ -70,7 +74,7 @@ mboels@dev:/workspace$ exit
 ssh-keygen -f "/home/mboels/.ssh/known_hosts" -R "172.17.0.3"
 
 
-% docker commit dev mboels/pytorch:version1
+% docker commit dev1 mboels/pytorch:version1
 
 % ssh mboels@172.17.0.3
 

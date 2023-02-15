@@ -31,7 +31,10 @@ Install a nice Docker environment
 		- Name: dev1
 		- Image: pytorch/pytorch:latest
 		- Advanced container settings:
-			- Command & logging: select Interactive & TTY
+			- Command & logging:
+				- CMD: 'sleep infinity'
+				- ENTRYPOINT: wget https://raw.githubusercontent.com/luiscarlosgph/docker-templates/main/pytorch/1.12.1%2Bcu116/files/entrypoint.sh
+				- select Interactive & TTY
 			- Volumes: container: /home/mboels  (Bind) -> host: /home/mboels (Writable)
 			- Restart policy: Always
 			- Runtime & Resources: Runtime: nvidia
@@ -88,7 +91,7 @@ Install a nice Docker environment
 7. ssh your docker container from your local machine:
 	```
 	ssh mboels@172.17.0.4
-
+	```
 
 8. Optional: create a config file to remove the username@IPaddress:
 
