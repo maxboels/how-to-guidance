@@ -25,6 +25,11 @@ Create a docker environment and ssh it:
     $ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
     ```
 
+2. (optional) Check containers in use:
+	```
+	$ docker ps
+	```
+
 3. Install portainer:
 	```
 	$ docker volume create portainer_data
