@@ -74,7 +74,7 @@ Create a docker environment and ssh it:
 	$ apt update
 	$ apt install vim
 	```
-5. Find your local user id:
+5. Find your local user id (new local command line window):
 	```
 	$ id
 	```
