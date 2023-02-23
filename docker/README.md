@@ -78,11 +78,11 @@ Create a docker environment and ssh it:
 	```
 	$ id
 	```
-	then on the remote server, change the userid to your local userid in password and group:
+	then on the remote server, edit the /etc/passwd file by replacing the userid next to your username: "username:x:userid:userid":
 	```
 	$ vim /etc/passwd
 	```
-	add your username to sudo and users, and userid to your username:
+	Do the same for /etc/group and also add your username to sudo and users:
 	```
 	$ vim /etc/group
 	```
