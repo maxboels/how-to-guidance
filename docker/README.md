@@ -78,7 +78,7 @@ Create a docker environment and ssh it:
 	```
 	$ id
 	```
-	then on the remote server, edit the /etc/passwd file by replacing the userid next to your username: "username:x:userid:userid":
+	then on the remote server, edit the /etc/passwd file by replacing the userid next to your username: "username::userid:userid":
 	```
 	$ vim /etc/passwd
 	```
