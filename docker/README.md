@@ -65,7 +65,7 @@ Create a docker environment and ssh it:
 4. Enter container (run locally):
 	```
 	$ docker exec -it dev1 /bin/bash
-	$ docker exec -it <CONTAINER ID> /bin/bash
+	$ docker exec -it <CONTAINER NAME> /bin/bash
 	```
 
 7. change permission in container (remote server):
