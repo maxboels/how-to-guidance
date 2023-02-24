@@ -44,12 +44,13 @@ Create a docker environment and ssh it:
 	```
 	- create container:
 		- Name: dev1
-		- Image: pytorch/pytorch:latest
+		- Image: pytorch/pytorch:latest or nvcr.io/nvidia/pytorch:22.11-py3
 		- Advanced container settings:
 			- Command & logging:
 				- CMD: 'sleep infinity'
 				- ENTRYPOINT: wget https://raw.githubusercontent.com/luiscarlosgph/docker-templates/main/pytorch/1.12.1%2Bcu116/files/entrypoint.sh
 				- select Interactive & TTY
+			- HostName: <container nam>
 			- Volumes: container: /home/mboels  (Bind) -> host: /home/mboels (Writable)
 			- Restart policy: Always
 			- Runtime & Resources: Runtime: nvidia
