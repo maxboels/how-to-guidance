@@ -18,5 +18,5 @@
 
 ## 2.1: Run this command in your remote-server: 
     ```
-    tensorboard --logdir=/nfs/home/mboels/projects/vit-mlp-multimodal-temporal/tensorboard/<EXP>/<DATE> --port=11093
+    tensorboard --logdir=/your/path/to/logs --port=11093
     ```
