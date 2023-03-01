@@ -1,6 +1,6 @@
 
 
-# 1 open new command line window connect to the server
+## 1. open new command line window connect to the server
 
 # type hostname in terminal to get <hostname>:
     ```
