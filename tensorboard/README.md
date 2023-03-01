@@ -11,12 +11,12 @@
 	ssh -L 11093:localhost:11093 aicheadnode
     ```
 
-## 2.0: Activate conda env with tensorboard and tensorflow installed:
+## 2. Activate conda env with tensorboard and tensorflow installed:
     ```
     conda activate tensorboard
     ```
 
-## 2.1: Run this command in your remote-server: 
+## 3. Run this command in your remote-server: 
     ```
     tensorboard --logdir=/your/path/to/logs --port=11093
     ```
