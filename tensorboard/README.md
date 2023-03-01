@@ -2,7 +2,7 @@
 
 ## 1. open new command line window connect to the server
 
-Type "hostname" in terminal to get your <hostname>:
+Type "hostname" in terminal to get your "HOSTNAME":
     ```
     ssh -N -f -L <LOCALPORT>:<HOSTNAME>:<DGXPORT> mboels@h1
     ```
@@ -11,12 +11,12 @@ Type "hostname" in terminal to get your <hostname>:
 	ssh -L 11093:localhost:11093 aicheadnode
     ```
 
-# 2.0: Activate conda env with tensorboard and tensorflow installed:
+## 2.0: Activate conda env with tensorboard and tensorflow installed:
     ```
     conda activate tensorboard
     ```
 
-# 2.1: SERVER run log file on tensorboard 
+## 2.1: SERVER run log file on tensorboard 
     ```
     tensorboard --logdir=/nfs/home/mboels/projects/vit-mlp-multimodal-temporal/tensorboard/<EXP>/<DATE> --port=11093
     ```
