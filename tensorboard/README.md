@@ -16,7 +16,7 @@
     conda activate tensorboard
     ```
 
-## 2.1: SERVER run log file on tensorboard 
+## 2.1: Run this command in your remote-server: 
     ```
     tensorboard --logdir=/nfs/home/mboels/projects/vit-mlp-multimodal-temporal/tensorboard/<EXP>/<DATE> --port=11093
     ```
