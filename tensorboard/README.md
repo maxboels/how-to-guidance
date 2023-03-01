@@ -2,7 +2,7 @@
 
 ## 1. open new command line window connect to the server
 
-# type hostname in terminal to get <hostname>:
+Type "hostname" in terminal to get your <hostname>:
     ```
     ssh -N -f -L <LOCALPORT>:<HOSTNAME>:<DGXPORT> mboels@h1
     ```
