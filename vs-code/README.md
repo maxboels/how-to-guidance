@@ -1,1 +1,14 @@
+
+1. Possible reasones for a remote connection not working:
+
+## If remote connection doesn't work it might be because of the (ECDSA) not added to the list of known hosts.
+  
+  You need to update the knownhost (remote server) to your local machine.
+  ```
+  ssh-keygen -f "/home/mboels/.ssh/known_hosts" -R "HostName"
+  ```
+
+
+## Usefull links:
+
 https://lightrun.com/how-to-debug-remotely-in-vs-code/
