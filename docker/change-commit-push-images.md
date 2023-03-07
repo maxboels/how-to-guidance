@@ -21,6 +21,12 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   docker commit [CONTAINER_ID] [new_image_name]
   ```
   
+  
+  ```
+  docker push registry-host:5000/myadmin/rhel-httpd:latest
+  ```
+  
+  
   ```
   docker images | grep mboels
   ```
