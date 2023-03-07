@@ -23,7 +23,7 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   
   
   ```
-  docker push aicregistry:5000/mboels:sf-base
+  docker push aicregistry:5000/${USER}:sf-base
   ```
   
   
