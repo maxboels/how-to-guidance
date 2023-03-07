@@ -16,7 +16,7 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   ```
   docker ps -a
   ```
-  
+  docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
   ```
   docker commit [CONTAINER_ID] [new_image_name]
   ```
