@@ -5,7 +5,7 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   ```
   
   ```
-  docker run -it cf0f3ca922e0 bin/bash
+  docker run -it [IMAGE_ID] bin/bash
   ```
   
   ```
