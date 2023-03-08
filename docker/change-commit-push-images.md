@@ -1,19 +1,34 @@
 https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
-
+  
+  
+  How to use the Docker Build without reusing previous cached images: --no-cache (takes longer to build from scratch).
+  ```
+  docker build . -f Dockerfile \
+    --network=host \
+    --no-cache \
+    
+  ```
+  
+  
+  Find docker images with tag and image id
   ```
   docker images
   ```
-  
-  ```
   start interactive session with container from image:
+  ```
   docker run -it [IMAGE_ID] bin/bash
+  ```
+  or use docker run and exec
+  ```
+  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
   ```
   
   ```
   python setup.py build develop
   exit
   ```
-  
+  The docker ps command only shows running containers by default. To see all containers, use the --all (or -a) flag:
   ```
   docker ps -a
   ```
