@@ -16,11 +16,12 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   ```
   start interactive session with container from image:
   ```
-  docker run -it [IMAGE_ID] bin/bash
-  ```
-  or use docker run and exec
-  ```
   docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+  docker run -it IMAGE_ID
+  docker run -v /nfs:/nfs -it 97b9705c45ec
+  ```
+  then use docker exec
+  ```
   docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
   ```
   
