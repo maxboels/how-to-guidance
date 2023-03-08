@@ -8,7 +8,7 @@
     ```
 
     ```
-	ssh -L 11093:localhost:11093 aicheadnode
+	ssh -N -f -L 11093:localhost:11093 aicheadnode
     ```
 
 ## 2. Activate conda env with tensorboard and tensorflow installed:
