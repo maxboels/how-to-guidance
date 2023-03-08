@@ -63,4 +63,8 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   docker images | grep mboels
   ```
   
-  
+  Stop container.
+  ```
+  docker stop mycontainer
+  ```
+ 
