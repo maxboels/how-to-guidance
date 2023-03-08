@@ -5,6 +5,7 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   ```
   
   ```
+  start interactive session with container from image:
   docker run -it [IMAGE_ID] bin/bash
   ```
   
