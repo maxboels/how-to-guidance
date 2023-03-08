@@ -24,6 +24,7 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   
   To push an image to a private registry and not the central Docker registry you must tag it with the registry hostname and port (if needed).
   ```
+  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
   docker tag 0e5574283393 myregistryhost:5000/fedora/httpd:version1.0
   ```
   
