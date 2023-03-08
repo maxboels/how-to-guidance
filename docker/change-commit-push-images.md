@@ -17,17 +17,23 @@ https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image
   start interactive session with container from image:
   ```
   docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
-  docker run -it IMAGE_ID
-  docker run -v /nfs:/nfs -it 97b9705c45ec
+  docker run --name mycontainer -it IMAGE_ID
+  docker run --name mycontainer -v /nfs:/nfs -it 97b9705c45ec
+  exit 13
   ```
-  then use docker exec
+  find excited container id:
+  ```
+  docker ps -a
+  ```
+  Next, execute an interactive sh shell on the container.
   ```
   docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+  docker exec -it mycontainer sh
   ```
   
   ```
   python setup.py build develop
-  exit
+  exit 13
   ```
   The docker ps command only shows running containers by default. To see all containers, use the --all (or -a) flag:
   ```
